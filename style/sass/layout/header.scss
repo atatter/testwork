@@ -1,0 +1,33 @@
+header {
+  height: 60px;
+  background-color: #2e2e2e;
+  margin: 0 auto;
+  .logo {
+    background-color: $color1;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+  }
+  // .search {
+  //   float: right;
+  //   height: 30px;
+  //   margin-top: 10px;
+  //   input {
+  //     -webkit-appearance: none;
+  //     border: 0;
+  //     &:focus {
+  //       border: 0;
+  //     }
+  //   }
+  //   img {
+  //     display: inline-block;
+  //     width: 18px;
+  //     height: 18px;
+  //     margin-left: 5px;
+  //     margin-right: 5px;
+  //   }
+  // }
+  nav {
+    display: inline-block;
+  }
+}

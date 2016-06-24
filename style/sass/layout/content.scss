@@ -1,0 +1,58 @@
+main {
+  //Top picture area
+  .pic-area {
+    background-image: url('/images/iphone.jpg');
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+  }
+
+  //Content navigation
+  nav {
+    height: 120px;
+    text-align: center;
+    line-height: 40px;
+    padding-top: 40px;
+    margin-bottom: 2px;
+    background-color: #f5f5f5;
+    h2 {
+      float: left;
+      margin: 0;
+      line-height: 40px;
+      border-left: 3px solid $color1;
+      padding-left: 20px;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
+    a {
+      width: 175px;
+      height: 40px;
+      line-height: 40px;
+      background-color: $color1;
+      float: right;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  //Content sections
+  section {
+    background-color: white;
+  }
+
+  .products {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align:justify;
+    article {
+      height: 300px;
+      width: 200px;
+      border: 1px solid gray;
+      display: inline-block;
+    }
+  }
+
+}
