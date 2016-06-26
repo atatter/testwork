@@ -1,12 +1,22 @@
 main {
   //Top picture area
   .pic-area {
-    background-image: url('/images/iphone.jpg');
+    background-image: url('/images/bgphonebed.jpg');
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
     width: 100%;
     height: 500px;
+    h1 {
+      margin: 0 0 0 30px;
+      padding: 200px 0 0 0;
+      color: #dedede;
+    }
+    .btn-regular {
+      margin: 15px 0 0 30px;
+      float: left;
+      text-align: center;
+    }
   }
 
   //Content navigation
@@ -26,15 +36,8 @@ main {
       font-size: 22px;
       text-transform: uppercase;
     }
-    a {
-      width: 175px;
-      height: 40px;
-      line-height: 40px;
-      background-color: $color1;
+    .btn-regular {
       float: right;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: white;
     }
   }
 
@@ -58,5 +61,6 @@ main {
       }
     }
   }
+
 
 }

@@ -36,6 +36,16 @@ body {
   background-image: url("../images/rightshadow.png");
 }
 
+.btn-regular {
+  width: 175px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #0579EF;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
 header {
   height: 60px;
   background-color: #2e2e2e;
@@ -105,12 +115,22 @@ header .basket h5 {
 }
 
 main .pic-area {
-  background-image: url("/images/iphone.jpg");
+  background-image: url("/images/bgphonebed.jpg");
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
+}
+main .pic-area h1 {
+  margin: 0 0 0 30px;
+  padding: 200px 0 0 0;
+  color: #dedede;
+}
+main .pic-area .btn-regular {
+  margin: 15px 0 0 30px;
+  float: left;
+  text-align: center;
 }
 main nav {
   height: 120px;
@@ -129,15 +149,8 @@ main nav h2 {
   font-size: 22px;
   text-transform: uppercase;
 }
-main nav a {
-  width: 175px;
-  height: 40px;
-  line-height: 40px;
-  background-color: #0579EF;
+main nav .btn-regular {
   float: right;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
 }
 main section {
   background-color: white;
