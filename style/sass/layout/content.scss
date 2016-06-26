@@ -50,8 +50,12 @@ main {
     article {
       height: 300px;
       width: 200px;
-      border: 1px solid gray;
+      border: 1px solid #dfdfdf;
       display: inline-block;
+      img {
+        width: 100%;
+        margin-top: 20px;
+      }
     }
   }
 
