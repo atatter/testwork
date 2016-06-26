@@ -155,6 +155,21 @@ main nav .btn-regular {
 main section {
   background-color: white;
 }
+main section .sorting {
+  background-color: red;
+}
+main section .catalogue-products .catalogue-item {
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  border: 2px solid #f5f5f5;
+  margin: 20px 0 20px 0;
+}
+main section .catalogue-products .catalogue-item img {
+  height: 350px;
+  margin: 25px 0 0 -60px;
+}
 main .products {
   padding-top: 50px;
   padding-bottom: 50px;
