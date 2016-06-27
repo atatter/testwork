@@ -30,6 +30,20 @@ footer {
   }
   .body {
     background-color: #2e2e2e;
-    height: 400px;
+    height: 300px;
+    .links {
+      .column {
+        margin-top: 70px;
+        h4 {
+          color: #dedede;
+        }
+        a {
+          display: block;
+          color: #dedede;
+          font-size: 12px;
+          margin-top: 15px;
+        }
+      }
+    }
   }
 }

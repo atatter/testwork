@@ -39,6 +39,15 @@ header {
       padding-right: 20px;
       padding-left: 20px;
       text-transform: uppercase;
+      a {
+        color: white;
+        text-decoration: none;
+        transition: 0.5;
+        &:hover {
+          color: $color1;
+          text-decoration: none;
+        }
+      }
     }
   }
   .basket {
