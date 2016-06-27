@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #434343;
 }
@@ -239,6 +240,68 @@ main section .catalogue-products .catalogue-item .item-info .color {
 main section .catalogue-products .catalogue-item .item-info .availability {
   font-weight: bold;
   font-size: 12px;
+}
+main .contact-content {
+  padding-bottom: 50px;
+}
+main .contact-content .contact-form {
+  padding: 0 20px 0 20px;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+main .contact-content .contact-form .btn-regular {
+  display: block;
+  margin: 20px auto 20px auto;
+}
+main .contact-content .contact-form h3 {
+  text-align: center;
+  color: #0579EF;
+}
+main .contact-content .contact-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+main .contact-content .contact-form input {
+  width: 300px;
+  border: none;
+  border-bottom: 2px solid #dfdfdf;
+  transition: 0.5s;
+}
+main .contact-content .contact-form input:focus {
+  outline: none;
+  border-color: #0579EF;
+}
+main .contact-content .contact-form .name {
+  display: inline-block;
+}
+main .contact-content .contact-form .email  {
+  float: right;
+}
+main .contact-content textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-bottom: 2px solid #dfdfdf;
+  transition: 0.5s;
+}
+main .contact-content textarea:focus {
+  outline: none;
+  border-color: #0579EF;
+}
+main .contact-content h2 {
+  padding: 50px 0 10px 0;
+  margin: 0;
+  color: #0579EF;
+  text-transform: uppercase;
+  visibility: hidden;
 }
 main .products {
   padding-top: 50px;

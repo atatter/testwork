@@ -7,30 +7,15 @@
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
   <script src="scripts/bootstrap.js"></script>
   <script src="scripts/angular.js"></script>
+  <script src="scripts/angular-route.js"></script>
+  <script src="/app/app.js"></script>
+  <script src="/app/services/homeService.js"></script>
+  <script src="/app/controllers/homeController.js"></script>
 </head>
-<body>
-  <header class="page-container">
-    <div class="inner-box">
-      <div class="logo" style="text-align:center;">
-        <img src="../images/logophone.png" style="height: 80%; margin-top: 10%;" alt="" />
-      </div>
-      <nav>
-        <li><a href="/">Home</a></li>
-        <li><a href="/products.html">Product catalogue</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </nav>
-      <div class="basket">
-        <div class="basket-img-box">
-          <img src="../images/shopping-cart.png" alt="">
-          <div class="item-count-box">
-            <p>3</p>
-          </div>
-        </div>
-        <h4>Shopping basket<h4>
-        <h5>€245.00</h5>
-      </div>
-    </div>
-  </header>
+<body ng-app="app">
+  <!-- Importing header -->
+  <div ng-include="'/templates/header.html'"></div>
+
   <main class="page-container">
     <div class="pic-area" style="height: 200px;">
       <div class="inner-box">
@@ -49,7 +34,7 @@
             </p>
 
             <div id="slider-range"></div>
-          </div>          
+          </div>
         </div>
         <div class="col-md-9 catalogue-products">
           <h2>Tooted</h2>
@@ -73,22 +58,9 @@
 
     </section>
   </main>
-  <footer class="page-container">
-    <div class="body">
 
-    </div>
-    <div class="footer">
-      <div class="inner-box">
-        <div class="footer-item">
-          <img src="../images/logophoneblue.png" alt="" />
-          <h3>Phone <br>Shop</h3>
-        </div>
-        <div class="footer-item">
-          <h5>&copy; 2016 Phone Shop All Rights Reserved</h5>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <!-- Importing footer -->
+  <div ng-include="'/templates/footer.html'"></div>
   <script>
   $(function() {
     $( "#slider-range" ).slider({
