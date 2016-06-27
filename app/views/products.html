@@ -1,6 +1,6 @@
 <div class="pic-area products-image">
   <div class="inner-box">
-    <h1 style="padding-top: 80px;">All the options you need</h1>
+    <h1 style="padding-top: 80px;">Suur valik tooteid</h1>
   </div>
 </div>
 <section>
@@ -10,7 +10,7 @@
       <h2>Sorteerimine</h2>
       <div class="sorting-area">
         <p>
-        <label for="amount">Price range:</label>
+        <label for="amount">Hinna vahemik:</label>
         <input type="text" id="amount" readonly style="border:0; background: none; color:#f6931f; font-weight:bold;">
         </p>
 
@@ -19,17 +19,17 @@
     </div>
     <div class="col-md-9 catalogue-products">
       <h2>Tooted</h2>
-      <article class="catalogue-item">
+      <article class="catalogue-item" ng-repeat="item in itemData">
         <div class="item-image">
-          <img src="https://pood.elion.ee/staticCDN/tooted/150829/7/400x400/Mobiiltelefon%20Apple%20iPhone%206s%2016GB%20hall%20eestvaatest.jpg" alt="" />
+          <img src="{{item.img}}" alt="" />
         </div>
         <div class="item-info">
-          <h3 class="name">mobiiltelefon Apple iPhone 6 Plus 64 GB</h3>
-          <p class="description">5,5-tollise ekraaniga Apple iPhone 6 Plus’il on 1.3 GHz kahetuumaline A8 protsessor, 64 GB telefoni mälu ja 1 GB põhimälu. 8 Mpix kaamera optilise stabilisaatoriga jäädvustab selgeid pilte ning võimaldab teha aegluubis videoid . Kiire 4G LTE mobiilne andmeside tagab sujuva veebis sirvimise.</p>
-          <p class="colors-title">Värv(id): </p><p class="color">Valge</p><p class="color">Must</p>
+          <h3 class="name">{{item.name}}</h3>
+          <p class="description">{{item.description}}</p>
+          <p class="colors-title">Värv(id): </p><p ng-repeat="color in item.colors" class="color">{{color}}</p>
           <p class="availability">Saadavus &#8690;</p>
           <p class="price-label">Tavahind:</p>
-          <p class="price">€899</p>
+          <p class="price">{{item.normal_price}}</p>
           <a class="btn-regular" href="#">Lisa ostukorvi</a>
         </div>
       </article>
@@ -38,18 +38,3 @@
   </div>
 
 </section>
-<script>
-$(function() {
-  $( "#slider-range" ).slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [ 75, 300 ],
-    slide: function( event, ui ) {
-      $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-    }
-  });
-  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-});
-</script>

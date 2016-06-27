@@ -215,6 +215,10 @@ main section .sorting .sorting-area {
   margin-top: 20px;
   border-radius: 5px;
   border: 2px solid #e9e9e9;
+  padding: 15px;
+}
+main section .sorting .sorting-area input {
+  color: #0579EF !important;
 }
 main section .catalogue-products .catalogue-item {
   overflow: hidden;
@@ -233,9 +237,10 @@ main section .catalogue-products .catalogue-item .item-image img {
 }
 main section .catalogue-products .catalogue-item .item-info .name {
   margin-top: 0;
+  margin-bottom: 5px;
 }
 main section .catalogue-products .catalogue-item .item-info .description {
-  font-size: 14px;
+  font-size: 13px;
 }
 main section .catalogue-products .catalogue-item .item-info .price-label {
   margin: 0 0 -5px 0;
@@ -564,6 +569,22 @@ footer .body .links .column a {
 .mobile-menu li a {
   color: #dedede;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 730px) {
+  .catalogue-item .item-image {
+    text-align: center;
+    float: none !important;
+    margin-bottom: 20px;
+  }
+  .catalogue-item .item-info {
+    padding: 0 20px 0 20px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .catalogue-item .item-info .description {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
