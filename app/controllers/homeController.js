@@ -1,8 +1,6 @@
 angular.module("app")
   .controller("homeController",
-    function ($scope, $location, $routeParams, homeService) {
+    function ($scope, $location, $routeParams, dataService) {
       console.log("HomeController started");
-      $scope.finishLoading = function() {
-        console.log("Finished");
-      }
+
     });

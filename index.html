@@ -9,11 +9,12 @@
   <script src="scripts/angular.js"></script>
   <script src="scripts/angular-route.js"></script>
   <script src="/app/app.js"></script>
-  <script src="/app/services/homeService.js"></script>
+  <script src="/app/services/dataService.js"></script>
   <script src="/app/controllers/homeController.js"></script>
+  <script src="/app/controllers/baseController.js"></script>
   <base href="/">
 </head>
-<body ng-app="app">
+<body ng-app="app" ng-controller="baseController">
   <header class="page-container">
     <div class="inner-box">
       <div class="logo" style="text-align:center;">
@@ -34,8 +35,13 @@
         <h4>Ostukorv<h4>
         <h5>€245.00</h5>
       </div>
-      <span id="mobile-menubtn" class="mobile-menubtn">&#9776;</span>
+      <span id="mobile-menubtn" ng-click="rollMenu()" class="mobile-menubtn">&#9776;</span>
     </div>
+    <ul id="mobile-menu" class="mobile-menu">
+      <li><a href="/#/" ng-click="navigate()">Avaleht</a></li>
+      <li><a href="/#/products" ng-click="navigate()">Toodete kataloog</a></li>
+      <li><a href="/#/contact" ng-click="navigate()">Kontakt</a></li>
+    </ul>
   </header>
 
   <main class="page-container" ng-view></main>
