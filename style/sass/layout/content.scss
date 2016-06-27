@@ -116,14 +116,50 @@ main {
     padding-top: 50px;
     padding-bottom: 50px;
     text-align:justify;
-    article {
-      height: 300px;
+    .featured-item {
       width: 200px;
+      height: 350px;
       border: 1px solid #dfdfdf;
       display: inline-block;
+      position: relative;
+      border-radius: 5px;
+      overflow: hidden;
+      padding-bottom: 40px;
+      .price {
+        font-size: 12px;
+        text-align: center;
+        span {
+          color: $color1;
+          font-size: 18px;
+        }
+      }
+      .name {
+        font-weight: bold;
+        text-align: center;
+        padding: 5px 5px 0 5px;
+      }
+      .percentage-box {
+        position: absolute;
+        display: inline-block;
+        height: 30px;
+        width: 50px;
+        color: white;
+        background-color: $color2;
+        border-radius: 2px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+      }
       img {
         width: 100%;
         margin-top: 20px;
+      }
+      .btn-regular {
+        display: inline-block;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        text-align: center;
       }
     }
   }
