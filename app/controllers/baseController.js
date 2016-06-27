@@ -11,6 +11,7 @@ angular.module("app")
       dataService.getData().success(function(e) {
         console.log(e);
         $scope.theData = e;
+        $scope.theSecondData = e;
         calcFeaturedItems();
       });
 
@@ -37,7 +38,8 @@ angular.module("app")
       });
 
       var calcFeaturedItems = function() {
-        var data = $scope.theData;
+        var data = [];
+        data = $scope.theData;
         var bonus = [];
         var quadra = [];
 
@@ -63,7 +65,6 @@ angular.module("app")
 
         var loadChosenItems = function() {
             $scope.chosenItems = quadra;
-            $scope.$apply();
         }
 
         console.log(quadra);

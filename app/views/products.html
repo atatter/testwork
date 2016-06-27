@@ -19,7 +19,7 @@
     </div>
     <div class="col-md-9 catalogue-products">
       <h2>Tooted</h2>
-      <article class="catalogue-item" ng-repeat="item in itemData">
+      <article class="catalogue-item" ng-repeat="item in itemData track by $index">
         <div class="item-image">
           <img src="{{item.img}}" alt="" />
         </div>
@@ -27,7 +27,6 @@
           <h3 class="name">{{item.name}}</h3>
           <p class="description">{{item.description}}</p>
           <p class="colors-title">Värv(id): </p><p ng-repeat="color in item.colors" class="color">{{color}}</p>
-          <p class="availability">Saadavus &#8690;</p>
           <p class="price-label">Tavahind:</p>
           <p class="price">{{item.normal_price}}</p>
           <a class="btn-regular" href="#">Lisa ostukorvi</a>

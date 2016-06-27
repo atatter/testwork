@@ -1,33 +1,30 @@
 angular.module("app")
   .controller("productsController",
     function ($scope, $location, $routeParams, dataService) {
-      console.log("ProductsController started");
 
       var loadItems = function(data) {
         if(data == undefined) {
-          $scope.itemData = $scope.theData;
+          $scope.itemData = $scope.theSecondData;
+          console.log($scope.itemData);
         } else {
           $scope.itemData = data;
           $scope.$apply();
         }
       }
 
-
       var maxPrice = 0;
 
 
-      angular.forEach($scope.theData, function(value, key) {
+      angular.forEach($scope.theSecondData, function(value, key) {
         if(value.normal_price > maxPrice) {
           maxPrice = value.normal_price;
         }
       });
 
       var calcItems = function(nr1, nr2) {
-        console.log(nr1 + " " + nr2);
         var someData = [];
-        angular.forEach($scope.theData, function(value, key) {
+        angular.forEach($scope.theSecondData, function(value, key) {
           if(value.normal_price >= nr1 && value.normal_price <= nr2) {
-            console.log("passed: " + value.normal_price)
             someData.push(value);
             $scope.$apply
           }
@@ -49,6 +46,8 @@ angular.module("app")
         $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
           " - $" + $( "#slider-range" ).slider( "values", 1 ) );
       });
+
+
 
       loadItems();
 

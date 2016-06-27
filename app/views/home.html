@@ -12,7 +12,7 @@
     </nav>
     <div class="products inner-box flex-container">
       <article class="featured-item" ng-repeat="item in chosenItems">
-        <div class="percentage-box">{{itemPercentage(item.client_price, item.normal_price)}}%</div>
+        <div class="percentage-box">-{{itemPercentage(item.client_price, item.normal_price)}}%</div>
         <img src="{{item.img}}" alt="">
         <p class="name">{{item.name}}</p>
         <p class="price">Kliendihind: <span>{{item.client_price}}</span></p>
