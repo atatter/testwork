@@ -1,6 +1,6 @@
 angular.module('app', ['ngRoute'])
     .config([
-        '$routeProvider', function($routeProvider) {
+        '$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
             console.log("Jah, ma laen");
             $routeProvider
                 .when('/products',
@@ -18,8 +18,8 @@ angular.module('app', ['ngRoute'])
                     controller: 'homeController',
                     templateUrl: 'app/views/home.html'
                 })
-                .otherwise({ redirectTo: '/' }
-                );
-
+                .otherwise({ redirectTo: '/'
+                });
+                $locationProvider.html5Mode(true);
         }
     ]);

@@ -10,6 +10,10 @@ header {
     height: 60px;
     float: left;
   }
+  .mobile-menubtn {
+    display: none;
+    float: right;
+  }
   // .search {
   //   float: right;
   //   height: 30px;
@@ -31,6 +35,7 @@ header {
   // }
   nav {
     display: inline-block;
+
     li {
       display: inline-block;
       color: #dedede;
@@ -98,4 +103,18 @@ header {
     }
 
   }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+      nav {
+        display: none;
+      }
+      .basket {
+        display: none;
+      }
+      .mobile-menubtn {
+        display: inline-block;
+      }
+    }
 }

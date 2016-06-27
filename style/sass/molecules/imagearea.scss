@@ -1,0 +1,47 @@
+.contact-image {
+  height: 200px;
+}
+.products-image {
+  height: 200px;
+}
+.homepage {
+  .pic-area {
+    height: 500px;
+  }
+}
+@media screen and (min-width: 830px) and (max-width: 992px) {
+
+    .homepage {
+        .pic-area {
+          height: 250px;
+          h1 {
+            padding-top: 80px;
+          }
+        }
+    }
+}
+@media screen and (max-width: 830px) {
+  main {
+      .pic-area {
+        height: 150px !important;
+        h1 {
+          padding-top: 62px;
+          font-size: 22px;
+          text-align: center;
+        }
+        .btn-regular {
+          display: none;
+        }
+      }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  main {
+      .pic-area {
+        h1 {
+          font-size: 20px
+        }
+      }
+    }
+}

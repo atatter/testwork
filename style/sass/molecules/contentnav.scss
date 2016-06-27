@@ -1,0 +1,19 @@
+@media screen and (max-width: 730px) {
+
+  .homepage {
+    .featured {
+      nav {
+        padding-top: 40px;
+        a{
+          display: none !important;
+        }
+        h2 {
+          text-align: center;
+          border: none;
+          float: none;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

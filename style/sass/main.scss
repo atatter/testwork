@@ -5,3 +5,12 @@
 @import 'layout/header';
 @import 'layout/content';
 @import 'layout/footer';
+//Atoms
+@import 'atoms/buttons';
+@import 'atoms/container';
+//Molecules
+@import 'molecules/imagearea';
+@import 'molecules/featured';
+@import 'molecules/contentnav';
+@import 'molecules/footernav';
+@import 'molecules/contactform';

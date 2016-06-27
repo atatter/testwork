@@ -1,0 +1,25 @@
+@media screen and (max-width: 830px) {
+    .homepage {
+        .featured {
+          .flex-container {
+            display:block;
+            padding: 50px 75px 50px 75px;
+            article {
+              display: block;
+              margin: 0 auto 25px auto;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .homepage {
+        .featured {
+          .flex-container {
+            padding: 50px 10px 50px 10px;
+          }
+        }
+    }
+}
