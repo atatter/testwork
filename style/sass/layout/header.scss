@@ -47,6 +47,10 @@ header {
           color: $color1;
           text-decoration: none;
         }
+        &:focus {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }
