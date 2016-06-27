@@ -11,35 +11,13 @@
       <a class="btn-regular" href="/products">Vaata kõiki tooteid &gt</a>
     </nav>
     <div class="products inner-box flex-container">
-      <article class="featured-item">
-        <div class="percentage-box">-13%</div>
-        <img src="https://pood.elion.ee/staticCDN/tooted/150829/7/400x400/Mobiiltelefon%20Apple%20iPhone%206s%2016GB%20hall%20eestvaatest.jpg" alt="">
-        <p class="name">mobiiltelefon Apple iPhone 6 Plus 64 GB</p>
-        <p class="price">Kliendihind: <span>€600</span></p>
+      <article class="featured-item" ng-repeat="item in chosenItems">
+        <div class="percentage-box">{{itemPercentage(item.client_price, item.normal_price)}}%</div>
+        <img src="{{item.img}}" alt="">
+        <p class="name">{{item.name}}</p>
+        <p class="price">Kliendihind: <span>{{item.client_price}}</span></p>
         <a class="btn-regular" href="#">Vaata lähemalt</a>
       </article>
-      <article class="featured-item">
-        <div class="percentage-box">-13%</div>
-        <img src="https://pood.elion.ee/staticCDN/tooted/150829/7/400x400/Mobiiltelefon%20Apple%20iPhone%206s%2016GB%20hall%20eestvaatest.jpg" alt="">
-        <p class="name">mobiiltelefon Apple iPhone 6 Plus 64 GB</p>
-        <p class="price">Kliendihind: <span>€600</span></p>
-        <a class="btn-regular" href="#">Vaata lähemalt</a>
-      </article>
-      <article class="featured-item">
-        <div class="percentage-box">-13%</div>
-        <img src="https://pood.elion.ee/staticCDN/tooted/150829/7/400x400/Mobiiltelefon%20Apple%20iPhone%206s%2016GB%20hall%20eestvaatest.jpg" alt="">
-        <p class="name">mobiiltelefon Apple iPhone 6 Plus 64 GB</p>
-        <p class="price">Kliendihind: <span>€600</span></p>
-        <a class="btn-regular" href="#">Vaata lähemalt</a>
-      </article>
-      <article class="featured-item">
-        <div class="percentage-box">-13%</div>
-        <img src="https://pood.elion.ee/staticCDN/tooted/150829/7/400x400/Mobiiltelefon%20Apple%20iPhone%206s%2016GB%20hall%20eestvaatest.jpg" alt="">
-        <p class="name">mobiiltelefon Apple iPhone 6 Plus 64 GB</p>
-        <p class="price">Kliendihind: <span>€600</span></p>
-        <a class="btn-regular" href="#">Vaata lähemalt</a>
-      </article>
-
       <article style="text-align: center;width: 100%;visibility: hidden;height: 0;"></article>
     </div>
   </section>
